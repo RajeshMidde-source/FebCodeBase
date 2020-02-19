@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>switch</title>
+</head>
+<body>
+<p id = "myid"> </p>
+<p id = "myscore"> </p>
+<script type="text/javascript">
+
+var score = 60;
+var result;
+
+switch (score) {
+
+case 100:
+case 90: 
+	result="Excellent";
+	break;
+
+case 80:
+case 70: 
+	result="Very good";
+	break;
+	
+case 60:
+	result="Good";
+	break;
+
+case 50:
+case 40: 
+	result="ok";
+	break;
+
+default:
+	result="UnKnown";
+
+}
+document.getElementById("myid").innerHTML = "The score is " + score; 
+document.getElementById("myscore").innerHTML="Its a " + result + " score";
+	
+
+
+</script>
+
+
+</body>
+</html>
